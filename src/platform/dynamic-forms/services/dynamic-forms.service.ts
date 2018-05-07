@@ -9,6 +9,7 @@ import { TdDynamicCheckboxComponent } from '../dynamic-elements/dynamic-checkbox
 import { TdDynamicSliderComponent } from '../dynamic-elements/dynamic-slider/dynamic-slider.component';
 import { TdDynamicSelectComponent } from '../dynamic-elements/dynamic-select/dynamic-select.component';
 import { TdDynamicDatepickerComponent } from '../dynamic-elements/dynamic-datepicker/dynamic-datepicker.component';
+import { TdDynamicComplexfieldComponent } from '../dynamic-elements/dynamic-complexfield/dynamic-complexfield.component';
 
 export enum TdDynamicType {
   Text = 'text',
@@ -28,6 +29,7 @@ export enum TdDynamicElement {
   Checkbox = 'checkbox',
   Select = 'select',
   FileInput = 'file-input',
+  Complex = 'complex'
 }
 
 export interface ITdDynamicElementValidator {
@@ -75,6 +77,8 @@ export class TdDynamicFormsService {
       case TdDynamicElement.Input:
       case TdDynamicElement.Password:
         return TdDynamicInputComponent;
+      case TdDynamicElement.Complex:
+        return TdDynamicComplexfieldComponent;
       case TdDynamicElement.Textarea:
         return TdDynamicTextareaComponent;
       case TdDynamicType.Boolean:

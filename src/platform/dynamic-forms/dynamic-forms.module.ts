@@ -30,6 +30,8 @@ import {
 import { TdDynamicSliderComponent } from './dynamic-elements/dynamic-slider/dynamic-slider.component';
 import { TdDynamicSelectComponent } from './dynamic-elements/dynamic-select/dynamic-select.component';
 import { TdDynamicDatepickerComponent } from './dynamic-elements/dynamic-datepicker/dynamic-datepicker.component';
+// Complex Element
+import { TdDynamicComplexfieldComponent } from './dynamic-elements/dynamic-complexfield/dynamic-complexfield.component';
 
 const TD_DYNAMIC_FORMS: Type<any>[] = [
   TdDynamicFormsComponent,
@@ -47,6 +49,7 @@ const TD_DYNAMIC_FORMS_ENTRY_COMPONENTS: Type<any>[] = [
   TdDynamicSliderComponent,
   TdDynamicSelectComponent,
   TdDynamicDatepickerComponent,
+  TdDynamicComplexfieldComponent
 ];
 
 @NgModule({

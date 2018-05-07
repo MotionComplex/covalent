@@ -146,6 +146,7 @@ export class DynamicFormsDemoComponent {
     TdDynamicElement.Checkbox,
     TdDynamicElement.SlideToggle,
     TdDynamicElement.FileInput,
+    TdDynamicElement.Complex
   ];
 
   showDynamicCode: boolean = false;
